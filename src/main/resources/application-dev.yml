@@ -1,0 +1,10 @@
+spring:
+  # 配置mysql数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/website-navigate?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 985464
+
+server:
+  port: 8080

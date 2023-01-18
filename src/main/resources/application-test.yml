@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+spring:
+  # 配置mysql数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://4ee99d9aaa99.c.methodot.com:33172/website-navigate?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
 
-</beans>
+server:
+  port: 8081
