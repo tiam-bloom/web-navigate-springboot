@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: web-navigate-springboot
+# 配置mysql数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://4ee99d9aaa99.c.methodot.com:33172/website-navigate?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
+server:
+  port: 8080
+
+---
+#spring:
+#  application:
+#    name: web-navigate-springboot
+#  # 配置mysql数据库
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/website-navigate?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+#    username: root
+#    password: 985464

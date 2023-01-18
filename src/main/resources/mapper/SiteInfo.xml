@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="top.code2022.mapper.SiteInfoMapper">
+
+    <select id="findAllComplete" resultMap="siteInfoResultMap">
+        select s.*,c.category cat from site_info s join category c on s.category_id = c.id
+    </select>
+    <resultMap id="siteInfoResultMap" type="top.code2022.pojo.SiteInfo">
+        <id property="id" column="id" />
+        <result property="title" column="title" />
+        <result property="icon" column="icon" />
+        <result property="url" column="url" />
+        <result property="description" column="description" />
+        <result property="category" column="cat" />
+    </resultMap>
+</mapper>
